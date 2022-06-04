@@ -4,7 +4,7 @@ Simple nodejs server
 
 ## To run
 
-node server.js
+node server.js or npm test
 
 ## More information
 
