@@ -1,0 +1,29 @@
+{
+  "name": "simplenodejsserver",
+  "version": "1.0.0",
+  "description": "Simple NodeJS server",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sparky4567/server.git"
+  },
+  "keywords": [
+    "simple",
+    "nodejs",
+    "server",
+    "javascript"
+  ],
+  "author": "Sparky4567",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sparky4567/server/issues"
+  },
+  "homepage": "https://github.com/Sparky4567/server#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1"
+  }
+}
