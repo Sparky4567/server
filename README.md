@@ -4,7 +4,7 @@ Simple nodejs server
 
 ## To run
 
-node server.js or npm test
+node server.js, npm start or npm test
 
 ## More information
 
