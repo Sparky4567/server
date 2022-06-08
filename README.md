@@ -14,9 +14,12 @@ Everything is more or less simple. There are only three modules. Each of them ha
 
 P.s. Switch case included
 
-## Working example
+## Working examples
 
-https://artefaktasnodeserver.herokuapp.com/
+- https://artefaktasnodeserver.herokuapp.com/
+- https://artefaktasnodeserver.herokuapp.com/posts
+- https://artefaktasnodeserver.herokuapp.com/api
+- https://artefaktasnodeserver.herokuapp.com/iamnotfound
 
 ## WASTED TIME
 
