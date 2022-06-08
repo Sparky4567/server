@@ -1,7 +1,6 @@
 const http = require("http");
 require("dotenv").config();
-const hostname = process.env.SERVER_IP;
-const port = process.env.SERVER_PORT;
+const port = process.env.PORT || 5000;
 const mainFunc = require("./modules/mainroute/mainroute");
 const defaultFunction = require("./modules/notfound/notfound");
 const apiFunction = require("./modules/api/api");
@@ -23,6 +22,6 @@ const server = http.createServer((req, res) => {
   }
 });
 
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
+server.listen(port, (err) => {
+  if (err) throw err;
 });
