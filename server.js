@@ -1,27 +1,22 @@
-const http = require("http");
-require("dotenv").config();
-const port = process.env.PORT || 5000;
-const mainFunc = require("./modules/mainroute/mainroute");
-const defaultFunction = require("./modules/notfound/notfound");
+const express = require("express");
+const app = express();
+const cookieParser = require("cookie-parser");
+const cors = require("cors");
+const mainRoutefunction = require("./modules/mainroute/mainroute");
 const apiFunction = require("./modules/api/api");
+const notFoundfunction = require("./modules/notfound/notfound");
+app.use(cookieParser());
+app.use(cors());
+app.listen(process.env.PORT || 5000);
 
-const server = http.createServer((req, res) => {
-  let path = req.url;
-  switch (path) {
-    case "/":
-      mainFunc.mainRoute(res);
-      break;
-
-    case "/api":
-      apiFunction.apiRoute(res);
-      break;
-
-    default:
-      defaultFunction.notFound(res);
-      break;
-  }
+app.get("/", (req, res) => {
+  mainRoutefunction.mainRoute(res);
 });
 
-server.listen(port, (err) => {
-  if (err) throw err;
+app.get("/api", (req, res) => {
+  apiFunction.apiRoute(res);
+});
+
+app.all("*", (req, res) => {
+  notFoundfunction.notFound(res);
 });
