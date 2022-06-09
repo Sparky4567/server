@@ -5,7 +5,6 @@ const cors = require("cors");
 const mainRoutefunction = require("./modules/mainroute/mainroute");
 const apiFunction = require("./modules/api/api");
 const notFoundfunction = require("./modules/notfound/notfound");
-const blogPostsfunction = require("./modules/blogposts/blogmodule");
 app.use(cookieParser());
 app.use(cors());
 app.listen(process.env.PORT || 5000);
