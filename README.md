@@ -12,8 +12,6 @@ Everything is more or less simple. There are only three modules. Each of them ha
 
 ## 😅
 
-P.s. Switch case included
-
 ## Working examples
 
 - https://artefaktasnodeserver.herokuapp.com/
