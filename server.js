@@ -18,10 +18,6 @@ app.get("/api", (req, res) => {
   apiFunction.apiRoute(res);
 });
 
-app.get("/latestposts", (req, res) => {
-  blogPostsfunction.getBlogPosts(res);
-});
-
 app.all("*", (req, res) => {
   notFoundfunction.notFound(res);
 });
